@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_inherit" inherit_id="account.report_invoice_document">
+        <xpath expr="/t/t/div/div[2]" position="after">
+             
+                    <div class="split left" >
+                                <p style="font-family: serif;">
+                                    
+                                           3 parking spots: 2 of the right side (construction side) and 1 on the left side. These spots will be the ones furthest from the
+                                            building, closest to the road.
+                                            
+                                            <br></br><br></br>
+                                            
+                                            
+                                    <u> <h5>How to pay:</h5></u>
+                                    <u>- E-Transfer:</u> Please send the payment to sales@ftldistribution.ca (this email is configured for auto-deposit no need for secret
+                                            question/answer) and mention your invoice number:<t t-esc="docs.name"/>.<br></br><br></br><br></br>
+                                    <u> - Wire/Bank Transfer:</u> Please use the following details and mention your invoice number with the payment memo: <t t-esc="docs.name"/>.
+                                    <b> Beneficiary Account Name:</b> Follow The Leader Distribution Company<br></br>
+                                    <b> Beneficiary Account address :</b> 71 W 2ND AVE UNIT 504 VANCOUVER, BC V5Y 0G9 Canada<br></br>
+                                    <b>       Bank:</b> The Bank of Nova Scotia<br></br>
+                                    <b>  Bank Address:</b> 6300 NO. 3 ROAD RICHMOND, BC V6Y 2B3 Canada<br></br>
+                                    <div style="width:100%">
+                                    <div style="width:50%; float:left;">
+                                        <b> Payment within Canada (CAD account):</b><br></br>
+                                            Transit number: 50690<br></br>
+                                            Institution number: 002<br></br>
+                                            Account number: 0294217<br></br>
+                                    </div>
+                                    <div style="width:50%; float:right;">
+                                        <b>International payments (USD account):</b><br></br>
+                                            Swift Code/BIC: NOSCCATT<br></br>
+                                            Canadian Clearing Code: CC002 50690<br></br>
+                                            Beneficiary Account Number: 50690 01772 10<br></br>
+                                    </div>
+                                    </div>
+                                    <br></br><br></br><br></br><br></br>
+                                    <div style="margin-top:10px;">
+                                    <u>- Credit Card:</u> Please ask us for a payment link. Please be aware that a convenience fee of 3% will be added to your invoice using this method.
+                                    </div>                            
+                                </p>
+                      </div>
+                            
+                            
+        </xpath>
+    
+        
+    </template>
+</odoo>
+
+

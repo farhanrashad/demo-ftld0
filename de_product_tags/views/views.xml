@@ -1,0 +1,23 @@
+<odoo>
+  <data>
+      
+    <record id="product_normal_form_view_inherit" model="ir.ui.view">
+        <field name="name">product.product.form</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            
+            <xpath expr="//div[hasclass('oe_title')]" position="after">
+                <group>
+                    <group>
+                         <field name="tag_ids" widget="many2many_tags" invisible="0"  />	
+                    </group>
+                </group>
+            </xpath>
+            
+        </field>
+    </record>
+      
+  </data>
+</odoo>
+
